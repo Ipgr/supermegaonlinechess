@@ -1,0 +1,30 @@
+# Build directories
+build/
+out/
+cmake-build-*/
+
+# Compiled binaries
+chess
+*.exe
+*.o
+*.a
+*.so
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE files
+.vscode/
+.idea/
+*.user
+*.cbp
+*.creator
+*.files
+*.includes
+
+# OS files
+.DS_Store
+Thumbs.db
