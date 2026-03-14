@@ -14,7 +14,7 @@ A fully featured chess game written in C++17 with an SFML graphical interface an
 ## File Structure
 
 ```
-CMakeLists.txt          — CMake build configuration
+Makefile                — Build configuration
 README.md               — This file
 src/
   main.cpp              — Entry point, creates GUI and starts game loop
@@ -25,8 +25,8 @@ src/
 
 ## Requirements
 
-- C++17 compatible compiler (GCC 7+, Clang 5+, MSVC 2017+)
-- CMake 3.15+
+- C++17 compatible compiler (GCC 7+, Clang 5+)
+- GNU Make
 - SFML 2.5+ (`libsfml-dev` on Ubuntu/Debian)
 
 ## Building
@@ -35,10 +35,8 @@ src/
 # Install SFML (Ubuntu/Debian)
 sudo apt-get install libsfml-dev
 
-# Configure and build
-mkdir build && cd build
-cmake ..
-cmake --build . -j4
+# Build
+make
 
 # Run
 ./chess
